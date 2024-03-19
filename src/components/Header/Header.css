@@ -1,0 +1,101 @@
+.header:before {
+    @apply content-[''] absolute top-0 left-0 w-full h-[174px] mdscreen:h-[80px] bg-gradient1 z-9 opacity-40;
+}
+.header-sticky:before {
+  @apply hidden;
+}
+body.menu-open .menu-icon {
+  @apply hidden;
+}
+body.menu-open .close-icon {
+  @apply grid;
+}
+.main-nav {
+    @apply fixed w-full smscreen2:w-full h-full pointer-events-none top-0 z-99 -translate-x-[110%];
+}
+.main-nav .mainNav__col .main-navbar li {
+  @apply relative before:content-[''] before:right-[-18px] before:absolute before:top-50per before:translate-y-minus_50 before:w-[4px] before:h-[4px] before:bg-white-100 before:rounded-999 last:before:hidden smscreen2:before:hidden;
+}
+/* .main-nav .mainNav__col .img.landscape {
+  @apply pt-[60%];
+}
+.main-nav .mainNav__col .img.landscape img {
+  @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full lgscreen:h-full object-cover block;
+} */
+.main-nav .mainNav__col .img.landscape img {
+  @apply w-full h-[539px] object-cover;
+}
+.main-nav .mainNav__col .navMenu .sub-navbar .sub-navMenu span {
+  @apply text-white-100 font-primary text-11 italic font-400 tracking-[-0.22px];
+}
+.mega-menu {
+  @apply hidden left-65 fixed transition-all delay-300 w-[230px];
+}
+.mega-menu.mega-menu2 {
+  @apply left-[auto] -ml-50 w-auto;
+}
+.mega-menu:before {
+  @apply content-[''] absolute -top-10 left-50per translate-x-minus_50 bg-[url('/../../images/menu-arrow.svg')] w-[20px] h-[20px] bg-contain;
+}
+.hoverable {
+  @apply static;
+}
+.hoverable:hover .mega-menu {
+  @apply block transition-all delay-300;
+}
+.mega-menu-open .banner {
+  @apply z-1;
+}
+body.menu-open .main-nav {
+  @apply pointer-events-auto;
+}
+body.menu-open {
+  @apply overflow-hidden;
+}
+body.menu-open .emailtext {
+  @apply block transition-all duration-500;
+}
+body.menu-open .header-left ul {
+  @apply hidden;
+}
+body.menu-open .navbar-icon span {
+  @apply block smscreen:hidden;
+}
+body.menu-open .emailtext {
+  @apply laptop:hidden;
+}
+body.menu-open .header::before {
+  @apply hidden;
+}
+header.header.header-sticky {
+  @apply bg-green-100
+}
+.menu-open .header {
+  @apply bg-green-100 transition-all duration-[2000ms];
+}
+/* .menu-open .closemenu {
+  @apply w-full transition-all duration-700;
+} */
+
+.main-nav .scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 4px;
+}
+.main-nav .scrollbar::-webkit-scrollbar
+{
+	width: 6px;
+}
+
+.main-nav .scrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #C0B49E;
+}
+
+.property-single .header-sticky {
+  @apply hidden;
+}
+
+
+

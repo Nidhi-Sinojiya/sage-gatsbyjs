@@ -1,0 +1,24 @@
+.footer .gform_body li {
+  @apply w-[33.33%] pl-50 mdscreen:w-full mb-15;
+}
+.footer .gform_body li input {
+  @apply bg-transparent border-b-1 border-white-100 w-full text-14 outline-none placeholder:text-white-100 text-white-100 pb-5;
+}
+.footer .gform_body li input::placeholder {
+  @apply opacity-60;
+}
+.footer .gform_body li input:focus::placeholder {
+  @apply opacity-100;
+}
+.footer .gform_body {
+  @apply w-[85%] large_desktop:w-[80%] laptop:w-[78%] xlscreen:w-[83%] ipad:w-full;
+}
+.footer .copyright li {
+  @apply relative;
+}
+.footer .copyright li::before {
+  @apply content-[''] absolute -left-10 w-[1px] h-[15px] top-4 bg-white-100 bg-opacity-[0.85];
+}
+.footer .content-blog.accordion:last-child .accordion__item.open {
+  @apply border-b-1 border-white-100 border-solid pb-10;
+}
